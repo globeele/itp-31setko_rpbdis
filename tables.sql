@@ -46,7 +46,7 @@ CREATE TABLE dbo.Companies (CompanyID int Identity(1,1) not null PRIMARY KEY, Na
 
 CREATE TABLE dbo.ProductionTypes (TypeID int IDENTITY(1,1) not null PRIMARY KEY, ProductionType nvarchar(50))--Виды продукции
 
-CREATE TABLE dbo.Productions (ProductionID int IDENTITY(1,1) not null PRIMARY KEY, TypeID int, ProductionName nvarchar(50), Features nvarchar(50), ProductionTypeUnit nvarchar(50), Photo image))--Продукция
+CREATE TABLE dbo.Productions (ProductionID int IDENTITY(1,1) not null PRIMARY KEY, TypeID int, ProductionName nvarchar(50), Features nvarchar(50), ProductionTypeUnit nvarchar(50), Photo image)--Продукция
 
 CREATE TABLE dbo.Outputs(OutputID int IDENTITY(1,1) not null PRIMARY KEY, TypeID int, OutputPlan int, OutputFact int, CompanyID int, ProductionID int, OutputYear int)--Выпуск
 
@@ -60,10 +60,10 @@ ALTER TABLE dbo.Releases ADD FOREIGN KEY (CompanyID) REFERENCES dbo.Companies (C
 
 ALTER TABLE dbo.Releases ADD FOREIGN KEY (ProductionID) REFERENCES dbo.Productions (ProductionID)
 
-ALTER TABLE dbo.Releases ADD FOREIGN KEY (TypeID) REFERENCES dbo.Productions (TypeID)
+ALTER TABLE dbo.Releases ADD FOREIGN KEY (TypeID) REFERENCES dbo.ProductionTypes (TypeID)
 
 ALTER TABLE dbo.Outputs ADD FOREIGN KEY (CompanyID) REFERENCES dbo.Companies (CompanyID)
 
 ALTER TABLE dbo.Outputs ADD FOREIGN KEY (ProductionID) REFERENCES dbo.Productions (ProductionID)
 
-ALTER TABLE dbo.Outputs ADD FOREIGN KEY (TypeID) REFERENCES dbo.Productions (TypeID)
+ALTER TABLE dbo.Outputs ADD FOREIGN KEY (TypeID) REFERENCES dbo.ProductionTypes (TypeID)
