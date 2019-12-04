@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\rpbdis\\rpbdis\\lab4\\lab4\\lab4\\lab4.csproj": {}
+    "D:\\itp-31setko_rpbdis\\rpbdis labs\\lab4\\lab4\\lab4\\lab4.csproj": {}
   },
   "projects": {
-    "D:\\rpbdis\\rpbdis\\lab4\\lab4\\lab4\\lab4.csproj": {
+    "D:\\itp-31setko_rpbdis\\rpbdis labs\\lab4\\lab4\\lab4\\lab4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\rpbdis\\rpbdis\\lab4\\lab4\\lab4\\lab4.csproj",
+        "projectUniqueName": "D:\\itp-31setko_rpbdis\\rpbdis labs\\lab4\\lab4\\lab4\\lab4.csproj",
         "projectName": "lab4",
-        "projectPath": "D:\\rpbdis\\rpbdis\\lab4\\lab4\\lab4\\lab4.csproj",
+        "projectPath": "D:\\itp-31setko_rpbdis\\rpbdis labs\\lab4\\lab4\\lab4\\lab4.csproj",
         "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
-        "outputPath": "D:\\rpbdis\\rpbdis\\lab4\\lab4\\lab4\\obj\\",
+        "outputPath": "D:\\itp-31setko_rpbdis\\rpbdis labs\\lab4\\lab4\\lab4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\",
@@ -92,6 +92,10 @@
               "version": "[3.0.0, )"
             },
             "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.0.0, )"
             },
